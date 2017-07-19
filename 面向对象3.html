@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+//	function Teacher(name,age){//teacher类（构造函数、工厂函数）
+//		//var obj = {};//原材料
+//	
+//		//加工
+//		this.name = name;
+//		this.age = age;
+//		this.say = function(){
+//			alert('我的名字叫'+this.name);
+//		}
+//		
+//		//出厂
+//		return obj;	
+//	}
+
+	function Teacher(name,age){
+		this.name = name;
+		this.age = age;
+		this.say = function(){
+			alert('我的名字叫'+this.name);
+		}
+	}
+	
+	var t = new Teacher('张燕辉',22);
+	t.say();
+	console.log(t);
+	
+</script>
+</body>
+</html>

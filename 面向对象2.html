@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	/*
+		属性：
+		
+			div.id
+			div.index
+			div.innerHTML
+			div.style...
+			
+			属性前面是有主的。
+			
+			对象（obj，arr，function）下才能有属性
+			
+		变量:
+			var arr
+			前面是没有对象的（没有主的）
+		
+		方法：
+		
+			obj.fn = function(){
+				alert(this);
+			}
+			
+			方法前面有主，默认this指向主
+		函数：
+			
+			function fn(){}
+			函数前没有主，默认this指向window
+			
+	*/
+	
+	function teacher(name,age){//teacher类（构造函数、工厂函数）
+		var obj = {};//原材料
+	
+		//加工
+		obj.name = name;
+		obj.age = age;
+		obj.say = function(){
+			alert('我的名字叫'+this.name);
+		}
+		
+		//出厂
+		return obj;	
+	}
+	var t = teacher('张燕辉',22);
+//	console.log(t);
+	t.say();
+
+</script>
+</body>
+</html>
