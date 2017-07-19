@@ -15,10 +15,16 @@
 	
 	//fn里的say和直接fn.say都是在这个对象上直接添加了一个方法
 	//所以fn.say != fn2.say
-	var fn = {
-		say(){
-			
-		}
+
+//	var fn = {
+//		say(){
+//			
+//		}
+//	}
+
+	var fn = {}
+	fn.say = function(){
+		
 	}
 	
 	var fn2 = {

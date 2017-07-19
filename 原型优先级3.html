@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	/*
+		如果直接使用Object那么会找到Function
+		
+		如果不直接使用，那么到Object就终止。
+		
+	*/
+	
+	Function.prototype.say = function(){
+		alert('fun111');
+	}
+	
+//	Object.prototype.say = function(){
+//		alert('obj222');
+//	}
+	
+	console.dir(Function);
+	
+	//Function.say();
+	Object.say();
+	
+</script>
+</body>
+</html>
