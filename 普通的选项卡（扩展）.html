@@ -42,10 +42,12 @@
 		<div>第三块内容</div>
 	</div>
 	
+	<!--
 	<input type="button" value="点击的时候让第一个停"/>
 	<input type="button" value="点击的时候让第二个开始轮播"/>
 	<input type="button" value="点击的时候让第一个开始轮播第二个停"/>
 	<input type="button" value="点击的时候如果轮播就停如果停就轮播"/>
+	-->
 	
 <script type="text/javascript">
 	
@@ -59,7 +61,6 @@
 		for(var i = 0,len = btns.length; i<len ; i++){
 			btns[i].index = i;
 			btns[i].onclick = function(){
-				
 				for(var i = 0,len = btns.length; i<len ; i++){
 					btns[i].className = divs[i].className = '';
 				}
@@ -78,12 +79,10 @@
 			for(var i = 0,len = btns.length; i<len ; i++){
 				btns[i].className = divs[i].className = '';
 			}
-			
 			btns[num%=btns.length].className = 'active';
 			divs[num%=btns.length].className = 'show';
 			
 		}
-		
 		
 		box.onmouseover = function(){
 			clearInterval(timer);
@@ -97,7 +96,6 @@
 	
 	tab('box',true);
 	tab('box2');
-	
 	
 </script>
 </body>

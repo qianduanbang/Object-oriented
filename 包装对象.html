@@ -10,7 +10,6 @@
 	/*
 		非空对象下才可以加属性和方法 
 		
-		
 		包装对象：
 			当简单类型去调用固定的属性或者方法的时候，那么系统内部会偷偷的
 			把这个简单类型转成对象类型去调用属性或者方法，调用结束之后这个
@@ -34,18 +33,14 @@
 	
 	str.num++;
 	
-	//alert(str.num);
-	//length,方法呀，都是String的
-	//console.log(str.substr(1));
+	alert(str.num);
 	
-	
+	//例子
 	var str2 = new String('123');
 	
 	str2.length = 1;
 	
 	console.log(str2);
-	
-	
 	
 </script>
 </body>

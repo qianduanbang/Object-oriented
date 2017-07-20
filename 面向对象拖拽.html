@@ -23,7 +23,6 @@
 <script type="text/javascript">
 	
 	function Drag(id){
-		
 		this.disX = 0;
 		this.disY = 0;
 		this.l = 0;
@@ -37,7 +36,6 @@
 		var _this = this;
 		this.box.onmousedown = function(ev){
 			_this.down(ev);
-
 			return false;
 		}
 	}
@@ -47,7 +45,6 @@
 		var _this = this;
 		this.disX = ev.clientX - this.box.offsetLeft;
 		this.disY = ev.clientY - this.box.offsetTop;
-		
 		
 		document.onmousemove = function(ev){
 			_this.move(ev);
@@ -59,15 +56,10 @@
 	}
 	
 	Drag.prototype.move = function(ev){
-		
 		this.l = ev.clientX - this.disX;
-		
 		this.t = ev.clientY - this.disY;
-		
 		this.lim();
-		
 		this.box.style.left = this.l + 'px';
-		
 		this.box.style.top = this.t  + 'px';
 	}
 	
@@ -89,12 +81,7 @@
 		}
 	}
 	
-	
-	
 	var d = new Drag('box');
-	
-	
-	
 	
 </script>
 </body>

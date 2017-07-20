@@ -42,7 +42,6 @@
 		<div>第三块内容</div>
 	</div>
 	
-	
 	<input type="button" value="点击的时候让第一个停" id="btn1"/>
 	<input type="button" value="点击的时候让第二个开始轮播" id="btn2"/>
 	<input type="button" value="点击的时候让第一个开始轮播第二个停" id="btn3"/>
@@ -50,7 +49,6 @@
 	
 <script type="text/javascript">
 
-	
 	function Tab(id){
 		this.box = document.getElementById(id);
 		this.btn = this.box.getElementsByTagName('input');
@@ -71,7 +69,6 @@
 	}
 	//切换
 	Tab.prototype.change = function(){
-		
 		for(var i=0;i<this.btn.length;i++){
 			this.btn[i].className = this.divs[i].className = '';
 		}
@@ -112,7 +109,6 @@
 		
 	}
 	
-	
 	var t1 = new Tab('box');
 	var t2 = new Tab('box2');
 	var btn1 = document.getElementById('btn1');
@@ -149,8 +145,7 @@
 		}
 		
 	}
-	
-	
+
 </script>
 </body>
 </html>

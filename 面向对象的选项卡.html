@@ -56,7 +56,7 @@
 			this.btn[i].onclick = function(){
 				//_this.index(this.index);
 				_this.change(this);
-//				//console.log(this);//当前点击的btn
+				//console.log(this);//当前点击的btn
 			}
 		}
 	}
@@ -67,20 +67,13 @@
 	
 	//清->加
 	Tab.prototype.change = function(that){//当前点击的btn
-		//alert(1);
-		
 		//console.log(this);
-		
 		for(var i=0;i<this.btn.length;i++){
 			this.btn[i].className = this.divs[i].className = '';
 		}
 		that.className = 'active';
-		
 		this.divs[that.index].className = 'show';
-		
 	}
-	
-	
 	
 	var t = new Tab('box');
 	t.Event();
