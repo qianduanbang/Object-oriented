@@ -90,11 +90,13 @@
 				而对象类型的赋值为赋址，改变子类会影响父类。
 	*/
 	
+	//属性继承
 	function Drag2(id){
 		//this
 		Drag.call(this,id);
 	}
 	
+	//方法继承
 	for(var attr in Drag.prototype){
 		console.dir(Drag.prototype[attr]);
 		Drag2.prototype[attr] = Drag.prototype[attr];
